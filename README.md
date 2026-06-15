@@ -81,9 +81,25 @@ The goal of the project is to establish an online presence for the team and prov
 ## Project Structure
 
 ```text
-team_portfolio/
+DEVSITEREQUEST/
 │
-├── portfolio/        ← Single app
+├── users/        
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── urls.py
+│   ├── admin.py
+│   └── tests.py
+
+├── projects/        
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── urls.py
+│   ├── admin.py
+│   └── tests.py
+
+├── testimonials/        
 │   ├── models.py
 │   ├── views.py
 │   ├── serializers.py
@@ -91,10 +107,13 @@ team_portfolio/
 │   ├── admin.py
 │   └── tests.py
 │
-├── team_portfolio/
+├── config/
 │   ├── settings.py
 │   ├── urls.py
-│   └── ...
+│   └── __init__.py
+    └── asgi.py
+    └── wsgi.py 
+     
 │
 ├── requirements.txt
 └── README.md
