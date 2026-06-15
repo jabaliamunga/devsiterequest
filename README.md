@@ -99,7 +99,23 @@ DEVSITEREQUEST/
 │   ├── admin.py
 │   └── tests.py
 
+├── Services/        
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── urls.py
+│   ├── admin.py
+│   └── tests.py
+
 ├── testimonials/        
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── urls.py
+│   ├── admin.py
+│   └── tests.py
+
+├── Inquiry/        
 │   ├── models.py
 │   ├── views.py
 │   ├── serializers.py
