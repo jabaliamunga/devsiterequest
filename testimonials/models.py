@@ -5,7 +5,7 @@ class Testimonial(models.Model):
     name = models.CharField(max_length=200)
     company = models.CharField(max_length=150, blank=True, null=True)
     role = models.CharField(max_length=150, blank=True, null=True)
-    testimonial_image = models.ImageField(upload_to="../images/testimonials/")
+    testimonial_image = models.ImageField(upload_to="images/")
     remarks = models.TextField()
     rating = models.IntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)],
