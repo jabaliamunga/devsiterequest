@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'Services',
     'Inquiry',
+    'projects',
+    'testimonials'
 ]
 
 MIDDLEWARE = [
@@ -119,6 +121,11 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+# media configuration
+
+MEDIA_URL = "/images/"
+MEDIA_ROOT = BASE_DIR / "images"
 
 
 # Static files (CSS, JavaScript, Images)
