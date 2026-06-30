@@ -116,5 +116,3 @@ Used for:
 3. Project
 4. Inquiry
 5. User (Django Built-in)
-
-This schema is intentionally simple, easy to implement, and sufficient for a professional team portfolio website.
