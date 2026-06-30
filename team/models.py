@@ -1,3 +1,13 @@
 from django.db import models
 
-# Create your models here.
+class Member(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+    image = models.ImageField(upload_to="member/")
+    awards = models.JSONField(default=list)
+    roles = models.JSONField(default=list)
+    description = models.TextField()
+    
+    def __str__(self):
+        return f"hello  i am {self.name}:i am {self.roles}"
+    
